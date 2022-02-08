@@ -37,3 +37,12 @@ services:
       - 127.0.0.1:1080:1080
       - 127.0.0.1:1050:1050
 
+  selenium-tests:
+    build: ./selenium-tests
+    depends_on:
+      - selenium
+
+  selenium:
+    image: selenium/standalone-chrome
+
+
