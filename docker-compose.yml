@@ -27,7 +27,7 @@ services:
       - ./django:/app
     depends_on:
       - db
-      - sendria
+      # - sendria
     ports:
       - 127.0.0.1:8012:8012
   # sendria:
