@@ -6,7 +6,6 @@ const dividersTheme = createTheme({
     fontFamily: 'Montserrat', 
     fontSize: '16px',
     fontWeight: '600',
-    padding: 'px',
   },
   palette: {
     primary: {
