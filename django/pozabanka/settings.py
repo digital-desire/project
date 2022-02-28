@@ -8,7 +8,7 @@ BASE_DIR = Path(__file__).resolve().parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config("SECRET_KEY")
-DEBUG = False
+DEBUG = True
 ALLOWED_HOSTS = ["*"]  # we should restrict that on load balancer level, no app level
 INSTALLED_APPS = [
     "pozabanka.users",
@@ -18,8 +18,10 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "rest_framework",
     "pozabanka.articles",
     "pozabanka.stories",
+    "pozabanka.api",
 ]
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -73,7 +75,7 @@ TIME_ZONE = "UTC"
 USE_I18N = True
 USE_L10N = True
 USE_TZ = True
-STATIC_URL = "/static/"
+STATIC_URL = "static/"
 # DEFAULT_AUTO_FIELD = 'django.db.models.UUIDField'  # it does not work for me
 AUTH_USER_MODEL = "users.User"
 ACCOUNT_LOGOUT_REDIRECT_URL = "/"
