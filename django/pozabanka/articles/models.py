@@ -8,7 +8,7 @@ class Article(models.Model):
     id = models.UUIDField(
         primary_key=True, default=uuid.uuid4, editable=False, unique=True
     )
-    slug = models.SlugField(null=False, unique=True, blank=False)
+    slug = models.SlugField(null=True, unique=True, blank=True)
     title = models.CharField(max_length=255, blank=False)
     description = models.TextField(max_length=600, blank=False)
     author = models.ForeignKey(
@@ -21,8 +21,8 @@ class Article(models.Model):
     event_date = models.DateField(blank=False, null=False)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    likes = models.ManyToManyField(User, related_name="article_likes")
-    dislikes = models.ManyToManyField(User, related_name="article_dislikes")
+    likes = models.ManyToManyField(User, related_name="article_likes", blank=True)
+    dislikes = models.ManyToManyField(User, related_name="article_dislikes", blank=True)
 
     def __str__(self):
         return self.title
@@ -37,12 +37,16 @@ class Source(models.Model):
     id = models.UUIDField(
         primary_key=True, default=uuid.uuid4, editable=False, unique=True
     )
-    cover_url = models.URLField(max_length=255, null=False, blank=False)
+    url = models.URLField(max_length=255, null=False, blank=False)
     title = models.CharField(
         max_length=255, blank=False
     )  # get automaticaly in the future?
     article = models.ForeignKey(
-        Article, on_delete=models.SET_NULL, null=True, blank=False
+        Article,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=False,
+        related_name="sources",
     )
     author = models.ForeignKey(
         User,
