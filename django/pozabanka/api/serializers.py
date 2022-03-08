@@ -5,19 +5,34 @@ from rest_framework import serializers
 
 class SourceSerializer(serializers.ModelSerializer):
     author = serializers.SerializerMethodField()
+    source_link = serializers.SerializerMethodField()
+    article_link = serializers.SerializerMethodField()
 
     class Meta:
         model = Source
         fields = [
+            "id",
             "title",
             "url",
             "author",
             "created_at",
             "updated_at",
+            "source_link",
+            "article_link",
         ]
 
     def get_author(self, instance):
         return instance.author.email
+
+    def get_source_link(self, instance):
+        source_path = reverse("source-detail", args=[instance.id])
+        request = self.context
+        return request.build_absolute_uri(source_path)
+
+    def get_article_link(self, instance):
+        article_path = reverse("article-detail", args=[instance.article.id])
+        request = self.context
+        return request.build_absolute_uri(article_path)
 
 
 class ArticleSerializer(serializers.ModelSerializer):
