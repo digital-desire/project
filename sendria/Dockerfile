@@ -1,9 +1,13 @@
-FROM alpine:3.14
-WORKDIR /
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONUNBUFFERED 1
-RUN apk add --no-cache -X http://dl-cdn.alpinelinux.org/alpine/edge/testing poetry==1.1.12-r1  # switch to regular alpine when poetry is part of main
-RUN apk add python3==3.9.5-r2 gcc python3-dev musl-dev bash
-COPY poetry.lock pyproject.toml /
-RUN poetry install --no-interaction
-CMD ["poetry", "run", "sendria", "--db", "/db", "--http-ip", "0.0.0.0", "--http-port", "80"]
+FROM python:3.10-alpine as build
+
+ARG VERSION=2.2.2
+
+RUN addgroup -S sendria && adduser -S sendria -G sendria
+WORKDIR /home/sendria
+USER sendria
+RUN python3 -m pip install --user sendria==$VERSION
+ENV PATH="/home/sendria/.local/bin:$PATH"
+
+EXPOSE 1025 1080
+
+ENTRYPOINT [ "sendria", "--foreground", "--db=./mails.sqlite", "--smtp-ip=0.0.0.0", "--http-ip=0.0.0.0" ]
