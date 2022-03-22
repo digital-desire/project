@@ -14,13 +14,22 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
-      - name: Build container
+      - name: Build django container
         run: |
           docker-compose build django
-      - name: Run black
+      - name: Run black on django
         run: |
           docker-compose run --entrypoint "poetry run black --check --verbose pozabanka/" django 
-      - name: Run tests 
+      - name: Run tests on django
         run: |
           docker-compose run --entrypoint "poetry run pytest pozabanka/" django
+      - name: Build selenium tests containers
+        run: |
+          docker-compose build selenium-tests
+      - name: Run black on selenium
+        run: |
+          docker-compose run --entrypoint "poetry run black --check --verbose selenium-tests/" selenium-tests 
+      - name: Run selenium tests
+        run: |
+          docker-compose run --entrypoint "poetry run pytest" selenium-tests
 

@@ -1,4 +1,5 @@
 version: "3"
+
 services:
   db:
     image: postgres:14
@@ -35,4 +36,22 @@ services:
     ports:
       - 127.0.0.1:1080:1080
       - 127.0.0.1:1050:1050
+
+  selenium-tests:
+    build: ./selenium-tests
+    depends_on:
+      selenium:
+        condition: service_healthy
+
+  selenium:
+    image: selenium/standalone-chrome
+    depends_on:
+      - django
+      - sendria
+    healthcheck:
+      test: ["CMD-SHELL", "curl http://selenium:4444/wd/hub"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
 
