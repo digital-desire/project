@@ -22,6 +22,7 @@ INSTALLED_APPS = [
     "pozabanka.articles",
     "pozabanka.stories",
     "pozabanka.api",
+    "pozabanka.tags",
 ]
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",

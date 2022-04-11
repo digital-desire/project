@@ -2,6 +2,7 @@ import uuid
 from django.db import models
 from pozabanka.lib.utils import get_unique_slug_with_uuid
 from pozabanka.users.models import User
+from pozabanka.tags.models import Tag
 
 
 class Article(models.Model):
@@ -23,6 +24,7 @@ class Article(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     likes = models.ManyToManyField(User, related_name="article_likes", blank=True)
     dislikes = models.ManyToManyField(User, related_name="article_dislikes", blank=True)
+    tags = models.ManyToManyField(Tag, related_name="article_tags", blank=True)
 
     def __str__(self):
         return self.title
