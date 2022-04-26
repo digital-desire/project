@@ -7,8 +7,8 @@ __pycache__/
 *.so
 
 # react
-/node_modules
-/frontend/node_modules
+# /node_modules
+# /frontend/node_modules
 
 # Distribution / packaging
 .Python
@@ -135,7 +135,7 @@ dmypy.json
 /pgdata
 
 # dependencies
-/node_modules
+# /node_modules
 /.pnp
 .pnp.js
 # /frontend/node_modules
