@@ -3,7 +3,7 @@ WORKDIR /app
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 ENV DEBIAN_FRONTEND noninteractive
-RUN apt update && apt install -y python3 gcc g++ python3-dev musl-dev bash libffi-dev rustc cargo python3-wheel libssl-dev libz-dev libjpeg-dev libpng-dev python3-pip pkg-config libpq-dev
+RUN apt update && apt install -y python3 gcc g++ python3-dev musl-dev bash libffi-dev rustc cargo python3-wheel libssl-dev libz-dev libjpeg-dev libpng-dev python3-pip pkg-config libpq-dev git
 COPY poetry.lock pyproject.toml /app/
 RUN pip install poetry
 RUN poetry install --no-interaction
