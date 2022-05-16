@@ -15,8 +15,8 @@ export default function ProfilUser() {
 
     const [anchorEl, setAnchorEl] = useState(null);
 
-    const handleClick = (event) => {
-    
+    const handleClick = (event:any) => {
+    //zapytać  o ten event bo HTMLEvent nie dziala
         setAnchorEl(event.currentTarget);
     };
 

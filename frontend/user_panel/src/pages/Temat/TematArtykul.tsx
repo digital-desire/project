@@ -5,7 +5,7 @@ import {ArtykulTagi, ArtykulCaly, ArtykulGrafika, ArtykulTytul, ArtykulZrodlo, A
 
 
 
-function TematArtykul({tytul, zrodlo, data, zgodnosc}) {
+function TematArtykul({tytul, zrodlo, data, zgodnosc}:{tytul:string, zrodlo:string,data:string,zgodnosc:string}) {
   return (
     <>
     

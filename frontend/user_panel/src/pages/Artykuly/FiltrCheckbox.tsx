@@ -6,7 +6,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import { Typography } from "@mui/material";
 
 
-function RekordChceckbox({checkboxlabel}) {
+function RekordChceckbox({checkboxlabel}:{checkboxlabel:string}) {
     return (
         <FormControlLabel
             control={<Checkbox  sx={{

@@ -7,7 +7,7 @@ import FormLabel from '@mui/material/FormLabel';
 import { Typography } from '@mui/material';
 import { deepPurple } from '@mui/material/colors';
 
-function RekordRadio({radiolabel}) {
+function RekordRadio({radiolabel}:{radiolabel:string}) {
     return (
         <FormControlLabel 
             control={<Radio  sx={{

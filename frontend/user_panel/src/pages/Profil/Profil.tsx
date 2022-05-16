@@ -21,9 +21,9 @@ export default function Profil() {
                     <UlubioneTematy /></Grid>
             
             <Grid item xs={8}>
-                <ProfilAktywnosc>
+                <ProfilAktywnosc/>
 
-                </ProfilAktywnosc>
+                
             </Grid></Grid>
 
    

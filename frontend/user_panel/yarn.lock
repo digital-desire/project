@@ -5976,6 +5976,11 @@
   dependencies:
     "tmpl" "1.0.5"
 
+"material-icons@^1.10.11":
+  "integrity" "sha512-A0LqelW1j8Ik/8Cf3nKaUyabFrUXaGOpK2CyJvwWuobCDHtuW5hbM4mzyu3C5e4QfC0l8CjFBaP1h5sm91sRjw=="
+  "resolved" "https://registry.npmjs.org/material-icons/-/material-icons-1.10.11.tgz"
+  "version" "1.10.11"
+
 "mdn-data@2.0.14":
   "integrity" "sha512-dn6wd0uw5GsdswPFfsgMp5NSB0/aDe6fK94YJV/AJDYXL6HVLWBsxeq7js7Ad+mU2K9LAlwpk6kN2D5mwCPVow=="
   "resolved" "https://registry.npmjs.org/mdn-data/-/mdn-data-2.0.14.tgz"
