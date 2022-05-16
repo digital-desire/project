@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { NaglowekStyled } from "./styles/Body.styled";
 import Lokalne from "./Lokalne";
 import Grid from '@mui/material/Grid';
-import content from "../content";
+
 import Card from "./Card";
 import Tematy from "./Tematy";
 import { Wyrownanie } from "./styles/Body.styled";

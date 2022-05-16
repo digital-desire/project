@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Card({item: {id, title, body, image}}) {
+export default function Card({item: {id, title, body, image}}:{item:{id:number,title:string, body:string, image:string} }) {
     return (
         <div>
             <div>

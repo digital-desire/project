@@ -1,6 +1,7 @@
 import PropTypes from "prop-types"
 
-function Button({ label, backgroundColor = "red", size = "md", handleClick }) {
+function Button({ label, backgroundColor = "red", size = "md", handleClick }: 
+{label:string, backgroundColor: string, size:string, handleClick:()=> void}) {
   let scale = 1
   if (size === "sm") scale = 0.75
   if (size === "lg") scale = 1.5

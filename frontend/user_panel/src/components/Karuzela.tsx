@@ -1,6 +1,6 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
-import { GlownyKontener, LewyKontener, PrawyKontener, MalaKarta, KartaWysokosc, DuzaKarta } from './styles/Karuzela.styled';
+import { GlownyKontener, LewyKontener, PrawyKontener, MalaKarta, DuzaKarta } from './styles/Karuzela.styled';
 import { Typography } from '@mui/material';
 import { KartaTytul } from './styles/Karuzela.styled';
 import Link from '@mui/material/Link';

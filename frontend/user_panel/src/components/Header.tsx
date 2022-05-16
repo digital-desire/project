@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { MouseEventHandler } from 'react';
 import { StyledHeader, Nav, Logo, Image, NavButton, Account, Szukajka } from './styles/Header.styled';
 import { ContainerStyl } from './styles/ContainerStyl.styled';
 import { Button } from './styles/Button.styled';
@@ -15,7 +15,7 @@ import { Link } from 'react-router-dom';
 export default function Header() {
 
     const [anchorEl, setAnchorEl] = React.useState(null);
-    const handleMenu = (event) => {
+    const handleMenu = (event:any) => {
         setAnchorEl(event.currentTarget);
       };
     
