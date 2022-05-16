@@ -62,7 +62,7 @@ function App() {
       <Route path="/klikanie" element={<Klikanie />} />
       <Route path="/profil" element={<Profil />} />
       <Route path="/kurs" element={<Kurs />} />
-    </Routes>
+ś    </Routes>
   </BrowserRouter>
 
          
