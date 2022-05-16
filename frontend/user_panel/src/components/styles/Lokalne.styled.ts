@@ -11,7 +11,6 @@ padding: 5px 10px 5px 10px;
 margin-right: 5px;
 margin-bottom: 10px;
 display: 'flex';
-alignItems: 'stretch';
 cursor: 'pointer';
 
 &:hover {

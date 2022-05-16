@@ -8,7 +8,7 @@ border-radius: 50px;
   font-size: 16px;
   font-weight: 700;
   padding: 15px 60px;
-  background-color: ${({bg}) => bg || '#fff'};
+  background-color: '#fff';
   color: ${({ color}) => color || '#333'};
 
 &:hover {
