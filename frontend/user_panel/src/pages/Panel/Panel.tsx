@@ -1,6 +1,6 @@
 import React from 'react';
 import { TytulStyled } from '../Artykuly/Artykuly.styled';
-import { NaglowekStyled } from '../../components/styles/Body.styled';
+import { NaglowekStyled } from '@pozabanka/common/src/styles/Body.styled';
 import PanelStatystyki from './PanelStatystyki';
 import Modal from './Modal';
 import { useState } from 'react';

@@ -1,11 +1,11 @@
-import styled from "styled-components";
-import { NaglowekStyled } from "./styles/Body.styled";
+
+import { NaglowekStyled } from '@pozabanka/common/src/styles/Body.styled';
 import Lokalne from "./Lokalne";
 import Grid from '@mui/material/Grid';
 
-import Card from "./Card";
+
 import Tematy from "./Tematy";
-import { Wyrownanie } from "./styles/Body.styled";
+import { Wyrownanie } from '@pozabanka/common/src/styles/Body.styled';
 import Karuzela from "./Karuzela";
 
 

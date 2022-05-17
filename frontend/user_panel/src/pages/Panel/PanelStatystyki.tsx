@@ -70,12 +70,12 @@ export default function PanelStatystyki() {
     <Grid item xs={6}><CalaLegenda>
       <Grid container spacing={2}>
       
-      <Grid item xs={6}><Legenda><FiberManualRecordIcon fontSize="xs"/><LegendaNazwa>Stat</LegendaNazwa></Legenda></Grid>
-      <Grid item xs={6}><Legenda><FiberManualRecordIcon fontSize="xs"/><LegendaNazwa>Stat</LegendaNazwa></Legenda></Grid>
-      <Grid item xs={6}><Legenda><FiberManualRecordIcon fontSize="xs"/><LegendaNazwa>Stat</LegendaNazwa></Legenda></Grid>
-      <Grid item xs={6}><Legenda><FiberManualRecordIcon fontSize="xs"/><LegendaNazwa>Stat</LegendaNazwa></Legenda></Grid>
-      <Grid item xs={6}><Legenda><FiberManualRecordIcon fontSize="xs"/><LegendaNazwa>Stat</LegendaNazwa></Legenda></Grid>
-      <Grid item xs={6}><Legenda><FiberManualRecordIcon fontSize="xs"/><LegendaNazwa>Stat</LegendaNazwa></Legenda></Grid>
+      <Grid item xs={6}><Legenda><FiberManualRecordIcon fontSize="small"/><LegendaNazwa>Stat</LegendaNazwa></Legenda></Grid>
+      <Grid item xs={6}><Legenda><FiberManualRecordIcon fontSize="small"/><LegendaNazwa>Stat</LegendaNazwa></Legenda></Grid>
+      <Grid item xs={6}><Legenda><FiberManualRecordIcon fontSize="small"/><LegendaNazwa>Stat</LegendaNazwa></Legenda></Grid>
+      <Grid item xs={6}><Legenda><FiberManualRecordIcon fontSize="small"/><LegendaNazwa>Stat</LegendaNazwa></Legenda></Grid>
+      <Grid item xs={6}><Legenda><FiberManualRecordIcon fontSize="small"/><LegendaNazwa>Stat</LegendaNazwa></Legenda></Grid>
+      <Grid item xs={6}><Legenda><FiberManualRecordIcon fontSize="small"/><LegendaNazwa>Stat</LegendaNazwa></Legenda></Grid>
       </Grid>
       </CalaLegenda>
     </Grid>

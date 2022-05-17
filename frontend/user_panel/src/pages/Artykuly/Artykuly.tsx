@@ -1,12 +1,9 @@
 import React from "react";
-import styledComponents from "styled-components";
-import Header from "../../components/Header";
-import { ThemeProvider } from "styled-components";
-import GlobalStyles from "../../components/styles/Global";
+
 
 import { TytulStyled, Divider, NazwaFiltra, FiltryStyled } from "./Artykuly.styled";
 import Grid from '@mui/material/Grid';
-import { NaglowekStyled } from "../../components/styles/Body.styled";
+import { NaglowekStyled } from '@pozabanka/common/src/styles/Body.styled';
 import { pink, yellow, grey, deepPurple } from "@mui/material/colors";
 import Checkbox from "@mui/material/Checkbox";
 import FormGroup from '@mui/material/FormGroup';

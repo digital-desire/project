@@ -4,7 +4,7 @@ import ProfilUser from './ProfilUser';
 import ProfilAktywnosc from './ProfilAktywnosc';
 import UlubioneTematy from './UlubioneTematy';
 import { Margines } from '../Artykuly/Artykuly.styled';
-import { NaglowekStyled } from '../../components/styles/Body.styled';
+import { NaglowekStyled } from '@pozabanka/common/src/styles/Body.styled';
 
 
 

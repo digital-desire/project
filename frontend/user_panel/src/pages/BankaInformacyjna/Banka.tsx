@@ -1,6 +1,6 @@
 import React from 'react'
 import { TytulStyled } from '../Artykuly/Artykuly.styled'
-import { NaglowekStyled } from '../../components/styles/Body.styled'
+import { NaglowekStyled } from '@pozabanka/common/src/styles/Body.styled'
 import BankaKarty from './BankaKarty'
 import { Divider } from '../Artykuly/Artykuly.styled'
 import { Margines } from '../Artykuly/Artykuly.styled'
