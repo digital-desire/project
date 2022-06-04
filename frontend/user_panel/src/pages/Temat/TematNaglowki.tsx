@@ -1,22 +1,22 @@
 import React from 'react'
-import { Grid } from '@mui/material'
-import Typography from '@mui/material/Typography';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
+// import { Grid } from '@mui/material'
+// import Typography from '@mui/material/Typography';
+// import { ThemeProvider, createTheme } from '@mui/material/styles';
 
-const theme = createTheme({
+// const theme = createTheme({
 
-  typography: {
-   fontFamily: 'Montserrat, sans-serif',
-    fontSize: 14,
+//   typography: {
+//    fontFamily: 'Montserrat, sans-serif',
+//     fontSize: 14,
     
     
-  },
-});
+//   },
+// });
 
 function TematNaglowki() {
   return (
     <>
-    <ThemeProvider theme={theme}>
+    {/* <ThemeProvider theme={theme}>
     <Grid container spacing={2}>
         <Grid item xs={1}>
         
@@ -39,8 +39,8 @@ function TematNaglowki() {
         </Grid>
 
         </ThemeProvider>
-    
-    
+     */}
+    <div></div>
     
     </>
   )

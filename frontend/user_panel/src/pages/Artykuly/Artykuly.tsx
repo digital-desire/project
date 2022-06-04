@@ -1,20 +1,20 @@
 import React from "react";
 
 
-import { TytulStyled, Divider, NazwaFiltra, FiltryStyled } from "./Artykuly.styled";
-import Grid from '@mui/material/Grid';
-import { NaglowekStyled } from '@pozabanka/common/src/styles/Body.styled';
-import { pink, yellow, grey, deepPurple } from "@mui/material/colors";
-import Checkbox from "@mui/material/Checkbox";
-import FormGroup from '@mui/material/FormGroup';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import { Typography } from "@mui/material";
-import { PoleTekstowe } from "./Artykuly.styled";
-import { PrzedzialDat } from "./Artykuly.styled";
-import FiltrCheckbox from "./FiltrCheckbox";
-import FiltrRadio from "./FiltrRadio";
-import Tematy from "../../components/Tematy";
-import { ButtonFiltry } from "./Artykuly.styled";
+// import { TytulStyled, Divider, NazwaFiltra, FiltryStyled } from "./Artykuly.styled";
+// import Grid from '@mui/material/Grid';
+// import { NaglowekStyled } from '@pozabanka/common/src/styles/Body.styled';
+// import { pink, yellow, grey, deepPurple } from "@mui/material/colors";
+// import Checkbox from "@mui/material/Checkbox";
+// import FormGroup from '@mui/material/FormGroup';
+// import FormControlLabel from '@mui/material/FormControlLabel';
+// import { Typography } from "@mui/material";
+// import { PoleTekstowe } from "./Artykuly.styled";
+// import { PrzedzialDat } from "./Artykuly.styled";
+// import FiltrCheckbox from "./FiltrCheckbox";
+// import FiltrRadio from "./FiltrRadio";
+// import Tematy from "../../components/Tematy";
+// import { ButtonFiltry } from "./Artykuly.styled";
 
 
 function Artykuly() {
@@ -24,8 +24,8 @@ function Artykuly() {
 
     return (
         <>
-
-            <TytulStyled
+<div>slowoooo</div>
+            {/* <TytulStyled
             >Wyszukiwana fraza</TytulStyled>
             <Divider />
             <Grid container spacing={3}>
@@ -46,7 +46,7 @@ function Artykuly() {
                     <NaglowekStyled>Tematy zawierające "FRAZA"</NaglowekStyled>
                     <Tematy />
                 </Grid>
-            </Grid>
+            </Grid> */}
         </>
     );
 }

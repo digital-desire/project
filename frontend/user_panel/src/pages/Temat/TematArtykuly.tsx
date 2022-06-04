@@ -1,10 +1,10 @@
 import React from 'react'
-import { Grid } from '@mui/material'
+// import { Grid } from '@mui/material'
 
 function TematArtykuly() {
   return (
     <>
-    <Grid container spacing={2}>
+    {/* <Grid container spacing={2}>
         <Grid item xs={1}>
         xxx
         </Grid>
@@ -31,8 +31,8 @@ function TematArtykuly() {
                 </Grid>
             </Grid>
     
-    
-    
+     */}
+    <div></div>
     </>
   )
 }

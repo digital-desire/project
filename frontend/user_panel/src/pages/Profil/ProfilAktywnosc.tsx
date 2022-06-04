@@ -1,17 +1,17 @@
 import React from 'react';
-import { useState } from 'react';
-import Grid from '@mui/material/Grid';
-import KeyboardDoubleArrowDownOutlinedIcon from '@mui/icons-material/KeyboardDoubleArrowDownOutlined';
-import KeyboardDoubleArrowUpOutlinedIcon from '@mui/icons-material/KeyboardDoubleArrowUpOutlined';
-import { ProfilAktywnoscKontener,LewyButton, KomentarzUzytkownika, NickUzytkownika, Miniprofilowe, LiniaDluga, LeadArtykulu, TytulArtykulu, ZdjecieArtykulu, PunktyAktywnosc, PrawyButton, AktywnoscUsera } from './Profil.styled';
+// import { useState } from 'react';
+// import Grid from '@mui/material/Grid';
+// import KeyboardDoubleArrowDownOutlinedIcon from '@mui/icons-material/KeyboardDoubleArrowDownOutlined';
+// import KeyboardDoubleArrowUpOutlinedIcon from '@mui/icons-material/KeyboardDoubleArrowUpOutlined';
+// import { ProfilAktywnoscKontener,LewyButton, KomentarzUzytkownika, NickUzytkownika, Miniprofilowe, LiniaDluga, LeadArtykulu, TytulArtykulu, ZdjecieArtykulu, PunktyAktywnosc, PrawyButton, AktywnoscUsera } from './Profil.styled';
 
 
 export default function ProfilAktywnosc() {
-const [count, setCount] = useState(192)
-const [count2, setCount2] = useState(21)
+// const [count, setCount] = useState(192)
+// const [count2, setCount2] = useState(21)
   return (
     <div>
-      
+{/*       
           <ProfilAktywnoscKontener>
           <Grid container spacing={1}>
         <Grid item xs={10}>
@@ -59,7 +59,7 @@ const [count2, setCount2] = useState(21)
          
          
         
-      </Grid> </ProfilAktywnoscKontener>
+      </Grid> </ProfilAktywnoscKontener> */}
       </div>
   )
 }

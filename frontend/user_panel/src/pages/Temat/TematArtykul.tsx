@@ -1,6 +1,6 @@
 import React from 'react'
-import { Grid } from '@mui/material'
-import {ArtykulTagi, ArtykulCaly, ArtykulGrafika, ArtykulTytul, ArtykulZrodlo, ArtykulTag } from './Temat.styled'
+// import { Grid } from '@mui/material'
+// import {ArtykulTagi, ArtykulCaly, ArtykulGrafika, ArtykulTytul, ArtykulZrodlo, ArtykulTag } from './Temat.styled'
 
 
 
@@ -9,7 +9,7 @@ function TematArtykul({tytul, zrodlo, data, zgodnosc}:{tytul:string, zrodlo:stri
   return (
     <>
     
-    <ArtykulCaly>
+    {/* <ArtykulCaly>
     <Grid container spacing={2}>
         <Grid item xs={1}>
         <ArtykulGrafika/>
@@ -34,8 +34,8 @@ function TematArtykul({tytul, zrodlo, data, zgodnosc}:{tytul:string, zrodlo:stri
         </Grid>
 
     </ArtykulCaly>
-    
-    
+     */}
+    <div></div>
     </>
   )
 }

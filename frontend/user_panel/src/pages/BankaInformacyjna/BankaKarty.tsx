@@ -1,8 +1,8 @@
 import React from 'react'
-import { Grid } from '@mui/material'
-import TematKarta from '../../components/TematKarta'
-import { TematKontener } from '../../components/styles/Tematy.styled'
-import { TagTest } from '../../components/styles/Tematy.styled'
+// import { Grid } from '@mui/material'
+// import TematKarta from '../../components/TematKarta'
+// import { TematKontener } from '../../components/styles/Tematy.styled'
+// import { TagTest } from '../../components/styles/Tematy.styled'
 const data = [
     {
         dostArt: 5,
@@ -54,8 +54,8 @@ const data = [
 ]
 function BankaKarty() {
     return (
-        <>
-            <Grid container spacing={2}>
+        <><div></div>
+            {/* <Grid container spacing={2}>
                 {data.map(element => {
                     console.log(element)
                     return (<Grid item xs={3}>
@@ -145,7 +145,7 @@ function BankaKarty() {
                 </Grid> */}
 
 
-            </Grid>
+            {/* </Grid> */} */
 
 
         </>

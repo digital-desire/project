@@ -1,15 +1,15 @@
 import React from 'react'
-import { TytulStyled } from '../Artykuly/Artykuly.styled'
-import { NaglowekStyled } from '@pozabanka/common/src/styles/Body.styled'
-import BankaKarty from './BankaKarty'
-import { Divider } from '../Artykuly/Artykuly.styled'
-import { Margines } from '../Artykuly/Artykuly.styled'
-import PodobneBanki from './PodobneBanki'
+// import { TytulStyled } from '../Artykuly/Artykuly.styled'
+// import { NaglowekStyled } from '@pozabanka/common/src/styles/Body.styled'
+// import BankaKarty from './BankaKarty'
+// import { Divider } from '../Artykuly/Artykuly.styled'
+// import { Margines } from '../Artykuly/Artykuly.styled'
+// import PodobneBanki from './PodobneBanki'
 
 function Banka() {
   return (
-   <>
-   <TytulStyled
+   <><div></div>
+   {/* <TytulStyled
             >Bańka Informacyjna</TytulStyled>
    <NaglowekStyled>Tematy z bańki</NaglowekStyled>
    <BankaKarty/>
@@ -17,7 +17,7 @@ function Banka() {
    <Divider />
    <NaglowekStyled>Podobne bańki
    </NaglowekStyled>
-   <PodobneBanki/>
+   <PodobneBanki/> */}
    </>
   );
 }

@@ -1,11 +1,11 @@
 import React from 'react'
-import { ModalBackground, ModalContainer, ModalCloseButton } from './Profil.styled'
-import CloseIcon from '@mui/icons-material/Close';
+// import { ModalBackground, ModalContainer, ModalCloseButton } from './Profil.styled'
+// import CloseIcon from '@mui/icons-material/Close';
 
 function MessageModal({ closeModal }:{closeModal:(value:boolean)=>void}) {
   return (
     <div>
-<ModalBackground>
+{/* <ModalBackground>
 
 <ModalContainer>
 <ModalCloseButton onClick={() => closeModal(false)}>
@@ -13,7 +13,7 @@ function MessageModal({ closeModal }:{closeModal:(value:boolean)=>void}) {
 </ModalCloseButton>
 Tutaj się wyświetli coś co dopiero zaprojektuje
 </ModalContainer>
-</ModalBackground>
+</ModalBackground> */}
 
     </div>
   )

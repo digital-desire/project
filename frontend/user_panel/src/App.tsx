@@ -1,69 +1,86 @@
 import React from 'react';
 import './App.css';
-import { ContainerStyl } from './components/styles/ContainerStyl.styled';
+import { createTheme, colors, ThemeProvider, ThemeOptions } from '@mui/material';
 import Header from './components/Header';
-import GlobalStyles from './components/styles/Global';
-
-import PageBody from './components/PageBody';
-import { createTheme } from '@mui/material';
-import { ThemeProvider } from '@mui/material/styles';
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from 'react-router-dom';
-
-
-
-import Panel from './pages/Panel/Panel';
 import Artykuly from './pages/Artykuly/Artykuly';
-import Banka from './pages/BankaInformacyjna/Banka';
-import Temat from './pages/Temat/Temat';
+import { Box } from '@mui/material';
 
-import Profil from './pages/Profil/Profil';
-
-
-const theme = createTheme ({
+const theme = createTheme({
+  palette: {
+    
+    primary: {
+      main: '#ffffff',
+      light: '#ffffff',
+    },
+    secondary: {
+      main: '#9c60ff',
+    },
+    background: {
+      default: '#F3F4F6',
+      paper: '#ffffff',
+    },
+    text: {
+      primary: '#727272',
+      secondary: 'rgba(0,0,0,0.7)',
+      disabled: 'rgba(193,193,193,0.5)',
   
-  typography: {
-    fontFamily: 'Montserrat, sans-serif',
+    },
+    error: {
+      main: '#ee6352',
+    },
+    info: {
+      main: '#2956ff',
+    },
   },
-  
-});
+  typography: {
+    fontFamily: '"Montserrat"',
+    fontWeightLight: 200,
+    fontWeightMedium: 600,
+    fontWeightBold: 900,
+  },
+})
 
-const HeaderURL = "/"
 
 function App() {
   return (
+  
+<ThemeProvider theme={theme}>
+<Box
+sx={{
+  height: '100vh',
+  width: '100vw',
+  bgcolor: 'background.default'}}
+><Header/></Box>
+</ThemeProvider>
     
-    <ThemeProvider theme={theme}>
+  //   <ThemeProvider theme={theme}>
 
-      <>
-        <GlobalStyles />
+  //     <>
+  //       <GlobalStyles />
 
-        <Header />
+  //       <Header />
 
-        <ContainerStyl>
-        <BrowserRouter>
-    <Routes>
-      <Route path={HeaderURL} element={<PageBody />} />
-      <Route path="/artykuly" element={<Artykuly />} />
-      <Route path="/banka" element={<Banka />} />
-      <Route path="/temat" element={<Temat />} />
-      <Route path="/panel" element={<Panel />} />
+  //       <ContainerStyl>
+  //       <BrowserRouter>
+  //   <Routes>
+  //     <Route path={HeaderURL} element={<PageBody />} />
+  //     <Route path="/artykuly" element={<Artykuly />} />
+  //     <Route path="/banka" element={<Banka />} />
+  //     <Route path="/temat" element={<Temat />} />
+  //     <Route path="/panel" element={<Panel />} />
     
-      <Route path="/profil" element={<Profil />} />
+  //     <Route path="/profil" element={<Profil />} />
 
-    </Routes>
-  </BrowserRouter>
+  //   </Routes>
+  // </BrowserRouter>
 
          
 
 
-        </ContainerStyl>
-      </>
+  //       </ContainerStyl>
+  //     </>
 
-    </ThemeProvider>
+  //   </ThemeProvider>
     
 
 

@@ -1,17 +1,17 @@
 import React from 'react';
-import Grid from '@mui/material/Grid';
-import { Statystyka } from './Panel.styled';
-import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
-import PermIdentityOutlinedIcon from '@mui/icons-material/PermIdentityOutlined';
-import ChatOutlinedIcon from '@mui/icons-material/ChatOutlined';
-import ArticleOutlinedIcon from '@mui/icons-material/ArticleOutlined';
-import { StatystykaButton,Legenda, CalaLegenda, LegendaNazwa, WykresKolowy, Wykres, StatystykaIkona, StatystykaLiczba, StatystykaNapis, StatystykaNazwa } from './Panel.styled';
-import { Margines } from '../Artykuly/Artykuly.styled';
-import { Modal } from '@mui/material';
-import Box from '@mui/material/Box';
-import Portal from '@mui/material/Portal';
-import { useState } from 'react';
-import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
+// import Grid from '@mui/material/Grid';
+// import { Statystyka } from './Panel.styled';
+// import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
+// import PermIdentityOutlinedIcon from '@mui/icons-material/PermIdentityOutlined';
+// import ChatOutlinedIcon from '@mui/icons-material/ChatOutlined';
+// import ArticleOutlinedIcon from '@mui/icons-material/ArticleOutlined';
+// import { StatystykaButton,Legenda, CalaLegenda, LegendaNazwa, WykresKolowy, Wykres, StatystykaIkona, StatystykaLiczba, StatystykaNapis, StatystykaNazwa } from './Panel.styled';
+// import { Margines } from '../Artykuly/Artykuly.styled';
+// import { Modal } from '@mui/material';
+// import Box from '@mui/material/Box';
+// import Portal from '@mui/material/Portal';
+// import { useState } from 'react';
+// import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 export default function PanelStatystyki() {
 
 
@@ -20,7 +20,8 @@ export default function PanelStatystyki() {
 
   return (
     <>
-    <Grid container spacing={2}>
+    <div></div>
+    {/* <Grid container spacing={2}>
   <Grid item xs={3}>
    <Statystyka><Grid item xs={5}><StatystykaIkona><VisibilityOutlinedIcon fontSize="large"/></StatystykaIkona></Grid>
    <Grid item xs={7}>
@@ -86,7 +87,9 @@ export default function PanelStatystyki() {
     <Grid item xs={1}></Grid>
     <Grid item xs={11}><StatystykaLiczba>Wykres</StatystykaLiczba></Grid>
     <Grid item xs={1}></Grid></Grid></Wykres></Grid>
-</Grid>
+</Grid> */}
     </>
   );
+  
 }
+

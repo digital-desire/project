@@ -1,9 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
-import { TagTest } from './styles/Tematy.styled';
-import { TematKontener } from './styles/Tematy.styled';
-import { Grid } from '@mui/material';
-import TematKarta from './TematKarta';
+// import styled from 'styled-components';
+// import { TagTest } from './styles/Tematy.styled';
+// import { TematKontener } from './styles/Tematy.styled';
+// import { Grid } from '@mui/material';
+// import TematKarta from './TematKarta';
 
 const data = [
     {
@@ -55,71 +55,71 @@ const data = [
     },
 ]
 export default function Tematy() {
-    return (
-        <Grid container spacing={1}>
-            {data.map(element => {
-                return(<Grid item xs={4}>
+    return (<div></div>
+//         <Grid container spacing={1}>
+//             {data.map(element => {
+//                 return(<Grid item xs={4}>
 
-                    <TematKontener>
-                        <TagTest><TematKarta dostArt={element.dostArt} komentarze={element.komentarze} aktUzy={element.aktUzy} tytul={element.tytul} /></TagTest>
-                    </TematKontener>
-                </Grid>)
-            })}
+//                     <TematKontener>
+//                         <TagTest><TematKarta dostArt={element.dostArt} komentarze={element.komentarze} aktUzy={element.aktUzy} tytul={element.tytul} /></TagTest>
+//                     </TematKontener>
+//                 </Grid>)
+//             })}
 
             
-            {/* <Grid item xs={4}>
+//             {/* <Grid item xs={4}>
 
-                <TematKontener>
-                    <TagTest><TematKarta dostArt={5} komentarze={45} aktUzy={34} tytul={"Nagłówekj artykułu"}/></TagTest>
-                </TematKontener>
-            </Grid>
-            <Grid item xs={4}>
+//                 <TematKontener>
+//                     <TagTest><TematKarta dostArt={5} komentarze={45} aktUzy={34} tytul={"Nagłówekj artykułu"}/></TagTest>
+//                 </TematKontener>
+//             </Grid>
+//             <Grid item xs={4}>
 
-                <TematKontener>
-                    <TagTest><TematKarta dostArt={5} komentarze={45} aktUzy={34} tytul={"Nagłówekj artykułu"}/></TagTest>
-                </TematKontener>
+//                 <TematKontener>
+//                     <TagTest><TematKarta dostArt={5} komentarze={45} aktUzy={34} tytul={"Nagłówekj artykułu"}/></TagTest>
+//                 </TematKontener>
                 
-            </Grid>
-            <Grid item xs={4}>
+//             </Grid>
+//             <Grid item xs={4}>
 
-<TematKontener>
-    <TagTest><TematKarta dostArt={5} komentarze={45} aktUzy={34} tytul={"Nagłówekj artykułu"}/></TagTest>
-</TematKontener>
-</Grid>
-<Grid item xs={4}>
+// <TematKontener>
+//     <TagTest><TematKarta dostArt={5} komentarze={45} aktUzy={34} tytul={"Nagłówekj artykułu"}/></TagTest>
+// </TematKontener>
+// </Grid>
+// <Grid item xs={4}>
 
-<TematKontener>
-    <TagTest><TematKarta dostArt={5} komentarze={45} aktUzy={34} tytul={"Nagłówekj artykułu"}/></TagTest>
-</TematKontener>
-</Grid>
-<Grid item xs={4}>
+// <TematKontener>
+//     <TagTest><TematKarta dostArt={5} komentarze={45} aktUzy={34} tytul={"Nagłówekj artykułu"}/></TagTest>
+// </TematKontener>
+// </Grid>
+// <Grid item xs={4}>
 
-<TematKontener>
-    <TagTest><TematKarta dostArt={5} komentarze={45} aktUzy={34} tytul={"Nagłówekj artykułu"} /></TagTest>
-</TematKontener>
+// <TematKontener>
+//     <TagTest><TematKarta dostArt={5} komentarze={45} aktUzy={34} tytul={"Nagłówekj artykułu"} /></TagTest>
+// </TematKontener>
 
-</Grid>
-<Grid item xs={4}>
+// </Grid>
+// <Grid item xs={4}>
 
-<TematKontener>
-    <TagTest><TematKarta dostArt={5} komentarze={45} aktUzy={34} tytul={"Nagłówekj artykułu"}/></TagTest>
-</TematKontener>
-</Grid>
-<Grid item xs={4}>
+// <TematKontener>
+//     <TagTest><TematKarta dostArt={5} komentarze={45} aktUzy={34} tytul={"Nagłówekj artykułu"}/></TagTest>
+// </TematKontener>
+// </Grid>
+// <Grid item xs={4}>
 
-<TematKontener>
-    <TagTest><TematKarta dostArt={5} komentarze={45} aktUzy={34} tytul={"Nagłówekj artykułu"}/></TagTest>
-</TematKontener>
-</Grid>
-<Grid item xs={4}>
+// <TematKontener>
+//     <TagTest><TematKarta dostArt={5} komentarze={45} aktUzy={34} tytul={"Nagłówekj artykułu"}/></TagTest>
+// </TematKontener>
+// </Grid>
+// <Grid item xs={4}>
 
-<TematKontener>
-    <TagTest><TematKarta dostArt={5} komentarze={45} aktUzy={34} tytul={"Nagłówekj artykułu"} /></TagTest>
-</TematKontener>
+// <TematKontener>
+//     <TagTest><TematKarta dostArt={5} komentarze={45} aktUzy={34} tytul={"Nagłówekj artykułu"} /></TagTest>
+// </TematKontener>
 
-</Grid> */}
+// </Grid> */}
 
 
-        </Grid>
+//         </Grid>
     )
 }
