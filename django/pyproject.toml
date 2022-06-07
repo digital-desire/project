@@ -13,6 +13,6 @@ django-utils-six = "*"
 python-decouple = "*"
 pytest-django = "*"
 pytest-cov = "*"
-newscatcher = { git = "https://github.com/wojtiwojt/newscatcher.git", branch = "master" }
+newscatcher = { git = "https://github.com/wojtiwojt/newscatcher.git", rev = "693f327" }
 
 [tool.poetry.dev-dependencies]
