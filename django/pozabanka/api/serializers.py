@@ -1,5 +1,6 @@
 from django.urls import reverse
 from pozabanka.articles.models import Article, Source
+from pozabanka.tags.models import Tag
 from rest_framework import serializers
 
 
@@ -35,6 +36,19 @@ class SourceSerializer(serializers.ModelSerializer):
         return request.build_absolute_uri(article_path)
 
 
+class TagSerializer(serializers.ModelSerializer):
+    tag_type = serializers.SerializerMethodField()
+
+    class Meta:
+        model = Tag
+        fields = ["name", "tag_type"]
+
+    def get_tag_type(self, instance):
+        if instance.tag_type:
+            return instance.tag_type.name
+        return "undefined"
+
+
 class ArticleSerializer(serializers.ModelSerializer):
     sources = SourceSerializer(many=True, required=False)
     author = serializers.SerializerMethodField()
@@ -42,6 +56,7 @@ class ArticleSerializer(serializers.ModelSerializer):
     likes = serializers.SerializerMethodField()
     dislikes = serializers.SerializerMethodField()
     source_count = serializers.SerializerMethodField()
+    tags = TagSerializer(read_only=True, many=True)
 
     class Meta:
         model = Article
@@ -59,6 +74,7 @@ class ArticleSerializer(serializers.ModelSerializer):
             "dislikes",
             "source_count",
             "sources",
+            "tags",
         ]
 
     def get_author(self, instance):

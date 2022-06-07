@@ -1,8 +1,10 @@
 from django.shortcuts import get_object_or_404
-from pozabanka.api.serializers import ArticleSerializer, SourceSerializer
-from pozabanka.articles.models import Article, Source
 from rest_framework import status, viewsets
 from rest_framework.response import Response
+
+from pozabanka.api.serializers import ArticleSerializer, SourceSerializer
+from pozabanka.articles.models import Article, Source
+from pozabanka.api.pagination import ArticlesPagination
 
 
 class ArticleViewSet(viewsets.ViewSet):
@@ -11,8 +13,10 @@ class ArticleViewSet(viewsets.ViewSet):
 
     def list(self, request):
         queryset = Article.objects.all()
-        serializer = ArticleSerializer(queryset, many=True, context=request)
-        return Response(serializer.data)
+        pagination = ArticlesPagination()
+        paginated_qs = pagination.paginate_queryset(queryset, request)
+        serializer = ArticleSerializer(paginated_qs, many=True, context=request)
+        return pagination.get_paginated_response(serializer.data)
 
     def retrieve(self, request, pk=None):
         article = get_object_or_404(Article, pk=pk)
@@ -48,8 +52,10 @@ class ArticleViewSet(viewsets.ViewSet):
 class SourceViewSet(viewsets.ViewSet):
     def list(self, request):
         queryset = Source.objects.all()
-        serializer = SourceSerializer(queryset, many=True, context=request)
-        return Response(serializer.data)
+        pagination = ArticlesPagination()
+        paginated_qs = pagination.paginate_queryset(queryset, request)
+        serializer = SourceSerializer(paginated_qs, many=True, context=request)
+        return pagination.get_paginated_response(serializer.data)
 
     def retrieve(self, request, pk=None):
         source = get_object_or_404(Source, pk=pk)
